@@ -6,4 +6,3 @@ while i <=2019 do
     puts i
     i +=1
 end
-puts test

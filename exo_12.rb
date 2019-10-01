@@ -6,5 +6,3 @@ while i <= number do
     i +=1
 end
 
-puts "Frankim"
- 
