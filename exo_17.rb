@@ -1,16 +1,24 @@
-puts "Quel âge as-tu?"
+require 'date'
 
-age = gets.chomp.to_i
+puts "Quelle est ta date de naissance ?"
 
-year = 0 
+d_user = Integer(gets.chomp)
+
+d_user2 = d_user
+
+today = Date.today.year
 
 
-year.each do |age|
-    if year = age 
-        puts "Il y a #{year} ans, tu avais la moitié de l'âge que tu as maintenant."
-    elsif year >= 0 
-        puts "Il y a #{year} ans, tu avais #{age} ans."
+
+while d_user <= today 
+    puts d_user
+    age = d_user - d_user2
+    annees = today - d_user
+    if annees == age
+        puts " Il y a #{annees} ans, tu avais la moitié de l'âge que tu as aujourd'hui"
+    else
+        puts " Il y a #{annees} ans tu avais #{age} ans"    
     end
-age -=1 
-year +=1  
+
+    d_user += 1
 end
