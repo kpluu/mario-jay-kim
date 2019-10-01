@@ -5,4 +5,6 @@ while i <= number do
     puts i 
     i +=1
 end
+
+puts "Frankim"
  
